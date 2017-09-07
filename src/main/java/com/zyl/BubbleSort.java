@@ -5,7 +5,7 @@ package com.zyl;
  */
 public class BubbleSort {
 
-    private static void sort(int[] tup){
+    private static void bubblesort(int[] tup){
         for (int i = 0; i < tup.length - 1; i++) {
             for (int j = 0; j < tup.length - i - 1; j++) {
                 if(tup[j] > tup[j+1]){
@@ -19,7 +19,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int[] tup = {5,2,45,6,8,2,1};
-        sort(tup);
+        bubblesort(tup);
         for (int i = 0; i < tup.length; i++) {
             System.out.println(tup[i]);
         }
